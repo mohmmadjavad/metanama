@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟ (راهنمای کامل)</title>
+<meta name="description" content="آموزش حذف کامل متادیتای عکس شامل موقعیت مکانی، مدل دوربین و تاریخ ضبط — برای JPEG، PNG و WEBP، آنلاین، رایگان و بدون آپلود در سرور." />
+<meta name="keywords" content="حذف اطلاعات عکس, حذف متادیتای عکس, پاک کردن اکسیف عکس, حذف کامل exif, حذف رد پای دیجیتال عکس" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080D1F" />
+<link rel="canonical" href="https://metanama.ir/blog/delete-photo-metadata-completely.html" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="متانما" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:title" content="چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟" />
+<meta property="og:description" content="آموزش حذف کامل متادیتای عکس برای JPEG، PNG و WEBP، آنلاین و بدون آپلود در سرور." />
+<meta property="og:image" content="https://metanama.ir/assets/img/blog/delete-metadata-cover.jpg" />
+<meta property="og:url" content="https://metanama.ir/blog/delete-photo-metadata-completely.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟" />
+<meta name="twitter:description" content="راهنمای حذف کامل متادیتای عکس، آنلاین و رایگان." />
+<meta name="twitter:image" content="https://metanama.ir/assets/img/blog/delete-metadata-cover.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32x32.png" />
+<link rel="shortcut icon" href="../assets/img/icons/favicon.ico" />
+<link rel="manifest" href="../site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟",
+  "description": "آموزش حذف کامل متادیتای عکس برای JPEG، PNG و WEBP، آنلاین و بدون آپلود در سرور.",
+  "image": "https://metanama.ir/assets/img/blog/delete-metadata-cover.jpg",
+  "author": { "@type": "Person", "name": "محمد جواد محمودی", "url": "https://immdjavad.ir/" },
+  "publisher": { "@type": "Organization", "name": "متانما", "logo": { "@type": "ImageObject", "url": "https://metanama.ir/assets/img/logo.png" } },
+  "mainEntityOfPage": "https://metanama.ir/blog/delete-photo-metadata-completely.html",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "fa-IR",
+  "wordCount": 1850,
+  "timeRequired": "PT9M"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://metanama.ir/" },
+    { "@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://metanama.ir/blog/index.html" },
+    { "@type": "ListItem", "position": 3, "name": "حذف کامل متادیتای عکس", "item": "https://metanama.ir/blog/delete-photo-metadata-completely.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="36" height="36" />
+      <span>متانما</span>
+      <span class="dom">metanama.ir</span>
+    </a>
+    <nav class="nav-links" aria-label="ناوبری اصلی">
+      <a href="../index.html">خانه</a>
+      <a href="../photo.html">ابزار عکس</a>
+      <a href="../music.html">ابزار موزیک</a>
+      <a href="../pdf/index.html">ابزار PDF</a>
+      <a href="../convert/index.html">تبدیل عکس</a>
+      <a href="index.html" class="active">مقالات</a>
+      <a href="../index.html#developer">توسعه‌دهنده</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../photo.html" class="btn btn-primary btn-sm">شروع کنید</a>
+      <button class="nav-burger" aria-label="باز کردن منو" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-sheet">
+    <a href="../index.html">خانه</a>
+    <a href="../photo.html">ابزار عکس</a>
+    <a href="../music.html">ابزار موزیک</a>
+    <a href="../pdf/index.html">ابزار PDF</a>
+    <a href="../convert/index.html">تبدیل عکس</a>
+    <a href="index.html">مقالات</a>
+    <a href="../index.html#developer">توسعه‌دهنده</a>
+    <a href="../photo.html" class="btn btn-primary btn-block">شروع کنید</a>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="مسیر صفحه">
+    <a href="../index.html">خانه</a><span class="sep">/</span>
+    <a href="index.html">مقالات</a><span class="sep">/</span>
+    <span class="current">حذف کامل متادیتای عکس</span>
+  </nav>
+
+  <div class="article-header">
+    <span class="cat-pill">متادیتای عکس</span>
+    <h1>چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟</h1>
+    <p class="lede" style="color:var(--text-2); font-size:16px; max-width:60ch;">گاهی نمی‌خواهید فیلدی را عوض کنید — می‌خواهید همه‌چیز از بین برود. این راهنما ساده‌ترین و مطمئن‌ترین راه پاک‌سازی کامل متادیتای عکس را نشان می‌دهد.</p>
+    <div class="article-meta-row">
+      <span class="item">⏱ زمان مطالعه: ۹ دقیقه</span>
+      <span class="item">📅 بروزرسانی: شهریور ۱۴۰۵</span>
+      <span class="item">✍️ محمد جواد محمودی</span>
+    </div>
+  </div>
+
+  <div class="article-cover">
+    <img src="../assets/img/blog/delete-metadata-cover.jpg" alt="یک عکس دیجیتال با لایه‌های داده‌ی پاک‌شونده" width="1200" height="675" loading="eager" />
+  </div>
+
+  <div class="toc">
+    <strong>فهرست مطالب</strong>
+    <ol>
+      <li><a href="#when">چه زمانی باید همه‌ی متادیتا را حذف کرد؟</a></li>
+      <li><a href="#methods">روش‌های رایج و مشکلات هرکدام</a></li>
+      <li><a href="#how-canvas">چطور متانما همه‌چیز را در یک کلیک پاک می‌کند؟</a></li>
+      <li><a href="#step-by-step">آموزش گام‌به‌گام</a></li>
+      <li><a href="#formats">آیا برای همه‌ی فرمت‌ها یکسان کار می‌کند؟</a></li>
+      <li><a href="#verify">چطور مطمئن شویم واقعاً پاک شده؟</a></li>
+      <li><a href="#difference-edit">تفاوت حذف کامل با ویرایش فیلد‌به‌فیلد</a></li>
+      <li><a href="#social-media">آیا شبکه‌های اجتماعی خودشان این کار را نمی‌کنند؟</a></li>
+      <li><a href="#archiving">نکته‌ای برای آرشیو بلندمدت</a></li>
+      <li><a href="#reverse-image">آیا حذف متادیتا جلوی جست‌وجوی تصویری را می‌گیرد؟</a></li>
+      <li><a href="#multiple-files">پاک‌سازی چند عکس به‌صورت پشت‌سرهم</a></li>
+      <li><a href="#before-sharing-checklist">چک‌لیست سریع پیش از هر اشتراک‌گذاری</a></li>
+      <li><a href="#difference-from-instagram">اگر پلتفرم خودش متادیتا را پاک می‌کند چرا خودم هم پاک کنم؟</a></li>
+      <li><a href="#faq">سوالات متداول</a></li>
+    </ol>
+  </div>
+
+  <article class="article-body">
+    <p>اگر فقط دنبال سریع‌ترین راه برای پاک‌کردن هر چیزی که داخل عکس پنهان شده هستید — بدون نگرانی از این‌که کدام فیلد چه اسمی دارد — جواب کوتاه این است: عکس را در <a href="../photo.html">ابزار رایگان عکس متانما</a> رها کنید و روی «دانلود نسخه‌ی پاک‌شده» بزنید. در ادامه توضیح می‌دهیم این کار دقیقاً چطور انجام می‌شود و چرا مطمئن‌تر از خیلی از روش‌های رایج دیگر است.</p>
+
+    <h2 id="when">چه زمانی باید همه‌ی متادیتا را حذف کرد؟</h2>
+    <p>گاهی نیازی به ویرایش تک‌تک فیلدها نیست. برای مثال:</p>
+    <ul>
+      <li>پیش از فروش کالا در سایت‌های آگهی، وقتی نمی‌خواهید موقعیت خانه یا مدل دقیق موبایل‌تان معلوم شود.</li>
+      <li>پیش از آپلود در شبکه‌های اجتماعی که «AI info» یا برچسب‌های مشابه را بر اساس متادیتا نمایش می‌دهند — همان‌طور که در <a href="ai-info-label-instagram.html">مقاله‌ی برچسب AI info اینستاگرام</a> توضیح داده‌ایم.</li>
+      <li>پیش از ارسال عکس در فضاهای عمومی یا ناشناس، جایی که هرگونه رد پای هویتی ناخواسته است.</li>
+      <li>هنگام آرشیو‌کردن عکس‌ها برای اشتراک با افراد دیگر، بدون افشای جزئیات فنی دستگاه.</li>
+    </ul>
+
+    <h2 id="methods">روش‌های رایج و مشکلات هرکدام</h2>
+    <p>روش‌های شناخته‌شده‌ی دیگری هم برای این کار وجود دارد، اما هرکدام محدودیتی دارند:</p>
+    <ul>
+      <li><strong>ویژگی «Remove Properties» ویندوز:</strong> فقط روی ویندوز کار می‌کند، نیاز به نصب‌چیزی ندارد اما برای گوشی یا مک قابل‌استفاده نیست.</li>
+      <li><strong>نرم‌افزارهایی مثل GIMP یا فتوشاپ:</strong> قدرتمند هستند اما نصب سنگین می‌خواهند و برای یک کار ساده زیاده‌روی است.</li>
+      <li><strong>اپلیکیشن‌های موبایل مخصوص:</strong> باید نصب شوند، دسترسی به گالری می‌خواهند و معمولاً تبلیغات دارند.</li>
+      <li><strong>گزینه‌ی «اشتراک‌گذاری بدون متادیتا» در برخی گوشی‌ها:</strong> فقط هنگام اشتراک‌گذاری مستقیم از گالری کار می‌کند، نه برای فایل‌های دانلودشده یا دریافتی.</li>
+    </ul>
+    <p>یک ابزار وب که هیچ‌چیز نصب نمی‌کند، روی هر سیستم‌عاملی کار می‌کند و فایل را جایی آپلود نمی‌کند، معمولاً ساده‌ترین گزینه است — دقیقاً همان چیزی که متانما ارائه می‌دهد.</p>
+
+    <div class="tool-cta">
+      <div class="txt">
+        <strong>یک کلیک تا یک عکس کاملاً تمیز</strong>
+        <p>نیازی به دانستن نام فنی هیچ فیلدی نیست. فقط عکس را رها کنید و دکمه‌ی «دانلود نسخه‌ی پاک‌شده» را بزنید.</p>
+      </div>
+      <a href="../photo.html" class="btn btn-primary btn-sm">پاک‌سازی رایگان عکس</a>
+    </div>
+
+    <h2 id="how-canvas">چطور متانما همه‌چیز را در یک کلیک پاک می‌کند؟</h2>
+    <p>روش کار متانما ساده و در عین حال بسیار قابل‌اعتماد است: به‌جای اینکه فیلد به فیلد دنبال متادیتا بگردد و آن‌ها را یکی‌یکی حذف کند، عکس را از نو، پیکسل به پیکسل، روی یک بوم دیجیتال (canvas) در مرورگر شما دوباره ترسیم می‌کند و از همان‌جا یک فایل کاملاً جدید می‌سازد. چون این فایل خروجی از صفر ساخته شده، هیچ داده‌ی جانبی‌ای — نه اگزیف، نه IPTC، نه XMP، نه هیچ بلوک اعتبارسنجی دیگری — در آن باقی نمی‌ماند. این روش با تک‌تک استانداردهای متادیتا کار می‌کند، حتی آن‌هایی که هنوز نامشان را نشنیده‌اید.</p>
+
+    <h2 id="step-by-step">آموزش گام‌به‌گام</h2>
+    <ol>
+      <li>وارد <a href="../photo.html">صفحه‌ی ابزار عکس متانما</a> شوید.</li>
+      <li>عکس مورد نظر را در کادر رها کنید یا با کلیک انتخاب کنید.</li>
+      <li>در پنل سمت راست (پیش‌نمایش)، دکمه‌ی «دانلود نسخه‌ی پاک‌شده (بدون هیچ متادیتا)» را پیدا کنید.</li>
+      <li>روی آن کلیک کنید — در کسری از ثانیه فایل جدید دانلود می‌شود.</li>
+      <li>اگر خواستید مطمئن شوید، همان فایل جدید را دوباره در همین ابزار بارگذاری کنید و به تب «همه‌ی داده‌ها» نگاه کنید.</li>
+    </ol>
+    <figure>
+      <img src="../assets/img/blog/delete-metadata-before-after.jpg" alt="مقایسه‌ی جدول متادیتای عکس قبل و بعد از پاک‌سازی" loading="lazy" width="1000" height="562" />
+      <figcaption>قبل از پاک‌سازی: فهرست بلند فیلدهای اگزیف. بعد از پاک‌سازی: هیچ فیلدی باقی نمانده.</figcaption>
+    </figure>
+
+    <h2 id="formats">آیا برای همه‌ی فرمت‌ها یکسان کار می‌کند؟</h2>
+    <p>بله — این یکی از مزیت‌های اصلی روش بازترسیم روی canvas است. چه عکس شما JPEG باشد، چه PNG، چه WEBP، نتیجه یکسان است: یک فایل خروجی تازه بدون هیچ لایه‌ی داده‌ی اضافه. این با ابزارهایی که فقط روی JPEG کار می‌کنند (چون فقط با استاندارد اگزیف سروکار دارند) فرق دارد.</p>
+
+    <h2 id="verify">چطور مطمئن شویم واقعاً پاک شده؟</h2>
+    <p>ساده‌ترین راه این است که فایل خروجی را دوباره در همان ابزار بارگذاری کنید. اگر در تب «خلاصه» پیام «هیچ متادیتای قابل‌توجهی پیدا نشد» را دیدید، یعنی فایل کاملاً تمیز است. همچنین می‌توانید به تب «همه‌ی داده‌ها» نگاه کنید تا لیست خالی فیلدها را با چشم خودتان ببینید.</p>
+
+    <h2 id="difference-edit">تفاوت «حذف کامل» با «ویرایش فیلد‌به‌فیلد» در چه مواردی مهم است؟</h2>
+    <p>ممکن است بپرسید چرا اصلاً نیاز به دو ابزار جدا (حذف کامل و ویرایش فیلدها) داریم. پاسخ به هدف نهایی برمی‌گردد. اگر می‌خواهید نام خودتان به‌عنوان عکاس در فایل باقی بماند اما موقعیت مکانی برود، حذف کامل گزینه‌ی مناسبی نیست چون همه‌چیز را با هم پاک می‌کند. اما اگر اصلاً برایتان مهم نیست چه فیلدهایی وجود داشته و فقط می‌خواهید صفر تا صد داده‌ی اضافه از بین برود، حذف کامل سریع‌ترین و مطمئن‌ترین مسیر است. برای سناریوهای ترکیبی (نگه‌داشتن بعضی فیلدها و حذف بعضی دیگر)، به <a href="edit-photo-metadata-guide.html">راهنمای ویرایش متادیتای عکس</a> سر بزنید.</p>
+
+    <h2 id="social-media">آیا شبکه‌های اجتماعی خودشان این کار را نمی‌کنند؟</h2>
+    <p>برخی پلتفرم‌ها، از جمله اینستاگرام و واتس‌اپ، بخشی از متادیتای عکس (مثل موقعیت GPS) را هنگام آپلود به‌طور خودکار حذف می‌کنند تا حریم خصوصی کاربران عادی حفظ شود. اما نمی‌توان کاملاً به این رفتار اعتماد کرد، به چند دلیل:</p>
+    <ul>
+      <li>سیاست هر پلتفرم می‌تواند بدون اطلاع‌رسانی واضح تغییر کند.</li>
+      <li>برخی پلتفرم‌ها فقط GPS را حذف می‌کنند، نه فیلدهای دیگر مثل مدل دستگاه یا نرم‌افزار ویرایش.</li>
+      <li>اگر عکس را از طریق ایمیل، پیام‌رسان، یا دانلود مستقیم به اشتراک بگذارید (نه از طریق آپلود در پلتفرم)، هیچ پاک‌سازی خودکاری اتفاق نمی‌افتد.</li>
+    </ul>
+    <p>به همین دلیل، پاک‌سازی دستی و از‌قبل، همیشه گزینه‌ی مطمئن‌تری نسبت به تکیه‌کردن روی رفتار خودکار یک پلتفرم است.</p>
+
+    <h2 id="archiving">نکته‌ای برای آرشیو بلندمدت</h2>
+    <p>اگر قصد دارید عکسی را برای مدت طولانی نگه دارید (مثلاً برای چاپ یا آرشیو خانوادگی)، شاید نخواهید همه‌ی متادیتا را از همان ابتدا پاک کنید — چون تاریخ دقیق و مکان می‌تواند بعدها برایتان ارزشمند باشد. در این حالت، پیشنهاد می‌شود یک نسخه‌ی اصلی (با متادیتای کامل) را در حافظه‌ی شخصی نگه دارید، و فقط نسخه‌ی پاک‌شده را برای اشتراک‌گذاری عمومی استفاده کنید. این دقیقاً همان رویکردی است که ابزار متانما با ساختن یک فایل خروجی جدید (بدون تغییر فایل اصلی) از آن پشتیبانی می‌کند.</p>
+
+    <h2 id="reverse-image">آیا حذف متادیتا جلوی جست‌وجوی تصویری را می‌گیرد؟</h2>
+    <p>این یک سوءتفاهم رایج است: خیلی‌ها فکر می‌کنند اگر متادیتای عکس را پاک کنند، دیگر کسی نمی‌تواند با جست‌وجوی تصویری (Reverse Image Search) منبع یا محتوای عکس را پیدا کند. این تصور اشتباه است. ابزارهایی مثل جست‌وجوی تصویری گوگل، از خود پیکسل‌های تصویر برای تطبیق استفاده می‌کنند، نه از متادیتای اطراف آن. یعنی حذف متادیتا فقط اطلاعات جانبی (مثل موقعیت مکانی و مدل دستگاه) را پاک می‌کند، نه محتوای بصری قابل‌جست‌وجوی خود عکس. اگر نگران شناسایی‌شدن از طریق محتوای تصویر هستید (نه متادیتا)، این موضوع کاملاً جدا از بحث این مقاله است.</p>
+
+    <h2 id="multiple-files">پاک‌سازی چند عکس به‌صورت پشت‌سرهم</h2>
+    <p>اگر چندین عکس دارید که همه باید پاک‌سازی شوند (مثلاً کل عکس‌های یک آگهی یا یک آلبوم اشتراکی)، در نسخه‌ی فعلی متانما هر عکس به‌صورت جداگانه پردازش می‌شود. خبر خوب این است که چون هر پردازش فقط چند ثانیه طول می‌کشد و نیازی به آپلود یا انتظار برای سرور نیست، پاک‌سازی ده‌ها عکس هم در چند دقیقه قابل انجام است — کافی است الگوی «بارگذاری، دانلود، انتخاب فایل بعدی» را تکرار کنید.</p>
+
+    <h2 id="before-sharing-checklist">چک‌لیست سریع پیش از هر اشتراک‌گذاری</h2>
+    <ul>
+      <li>آیا این عکس شامل موقعیت مکانی خصوصی است؟</li>
+      <li>آیا مدل دستگاه یا نام‌تان در فیلدهای فنی ثبت شده؟</li>
+      <li>آیا قصد انتشار در یک پلتفرم دارید که بر اساس متادیتا برچسب می‌زند (مثل اینستاگرام)؟</li>
+      <li>اگر پاسخ هرکدام «بله» یا «نمی‌دانم» بود، یک بار عکس را در <a href="../photo.html">ابزار متانما</a> بررسی کنید.</li>
+    </ul>
+    <p>این چهار سوال ساده، در کمتر از یک دقیقه، تصمیم درست را برایتان روشن می‌کند.</p>
+
+    <h2 id="difference-from-instagram">اگر پلتفرم مقصد خودش متادیتا را پاک می‌کند، چرا خودم هم پاک کنم؟</h2>
+    <p>حتی اگر پلتفرمی که قصد آپلود در آن را دارید (مثل اینستاگرام یا واتس‌اپ) بخشی از متادیتا را خودکار حذف کند، پاک‌سازی دستی از قبل چند مزیت دارد. اول، مطمئن می‌شوید که هیچ داده‌ای — نه فقط GPS — باقی نمی‌ماند، چون رفتار پلتفرم‌ها می‌تواند بدون اطلاع‌رسانی تغییر کند. دوم، اگر همان عکس را در چند پلتفرم یا از طریق چند روش (دانلود مستقیم، اشتراک‌گذاری فایل، ایمیل) توزیع کنید، پاک‌سازی یک‌باره در مبدأ، نیاز به اعتماد به رفتار هر پلتفرم را از بین می‌برد.</p>
+
+    <h2 id="faq">سوالات متداول</h2>
+    <h3>آیا این کار حجم فایل را زیاد می‌کند؟</h3>
+    <p>نه، معمولاً برعکس — چون داده‌ی جانبی حذف می‌شود، حجم فایل خروجی کمی کوچک‌تر از فایل اصلی است.</p>
+    <h3>آیا کیفیت تصویری عکس افت می‌کند؟</h3>
+    <p>برای JPEG و WEBP، بازترسیم با کیفیت بالا (٪۹۵) انجام می‌شود که افت محسوسی ایجاد نمی‌کند. برای PNG، فشرده‌سازی کاملاً بدون افت (lossless) است.</p>
+    <h3>آیا می‌توانم چند عکس را همزمان پاک کنم؟</h3>
+    <p>در نسخه‌ی فعلی متانما، پردازش یک‌به‌یک انجام می‌شود؛ اما چون هر مرحله چند ثانیه بیشتر طول نمی‌کشد، برای چند عکس هم زمان زیادی نمی‌برد.</p>
+    <h3>آیا این ابزار نیاز به ثبت‌نام یا حساب کاربری دارد؟</h3>
+    <p>خیر، هیچ ثبت‌نامی لازم نیست. کافی است وارد صفحه شوید و مستقیم عکس را بارگذاری کنید.</p>
+    <h3>آیا پاک‌سازی متادیتا روی عکس‌های اسکن‌شده هم کار می‌کند؟</h3>
+    <p>بله، فرقی نمی‌کند عکس با دوربین گرفته شده یا اسکن یک سند/عکس کاغذی باشد؛ تا زمانی که فرمت خروجی JPEG، PNG یا WEBP باشد، پاک‌سازی به همان شکل انجام می‌شود.</p>
+    <h3>آیا لازم است هر بار فایل پاک‌شده را جای فایل اصلی جایگزین کنم؟</h3>
+    <p>این کاملاً به شما بستگی دارد. توصیه می‌شود فایل اصلی را برای آرشیو شخصی نگه دارید و فقط نسخه‌ی پاک‌شده را برای اشتراک‌گذاری یا انتشار عمومی استفاده کنید. این کار تضمین می‌کند که در صورت نیاز آینده به اطلاعات اصلی، همچنان به آن‌ها دسترسی داشته باشید.</p>
+
+    <h2>جمع‌بندی</h2>
+    <p>وقتی هدف پاک‌کردن کامل و بدون دردسر همه‌ی متادیتای یک عکس است، نیازی به دانستن جزئیات فنی یا نصب نرم‌افزار نیست. <a href="../photo.html">ابزار عکس متانما</a> این کار را در یک کلیک، برای هر فرمتی، کاملاً رایگان و داخل مرورگر شما انجام می‌دهد.</p>
+  </article>
+
+  <div class="tag-row">
+    <span class="tag">exif</span><span class="tag">privacy</span><span class="tag">remove-metadata</span>
+  </div>
+
+  <div class="author-box">
+    <img src="../assets/img/dev/mmahmoudi.jpg" alt="محمد جواد محمودی" width="56" height="56" loading="lazy" />
+    <div>
+      <strong>محمد جواد محمودی</strong>
+      <span>توسعه‌دهنده و نویسنده‌ی متانما — <a href="https://immdjavad.ir/" target="_blank" rel="noopener">immdjavad.ir</a></span>
+    </div>
+  </div>
+
+  <section class="related-posts">
+    <h2>مقالات مرتبط</h2>
+    <div class="post-grid">
+      <a href="what-is-exif-guide.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/exif-guide-cover.jpg" alt="راهنمای کامل اگزیف عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>اگزیف (EXIF) چیست؟ راهنمای کامل متادیتای عکس</h3><p>همه‌ی فیلدهای اگزیف و کاربردشان را یک‌جا بشناسید.</p></div>
+      </a>
+      <a href="change-photo-gps-location.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/change-gps-cover.jpg" alt="تغییر موقعیت جغرافیایی عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه موقعیت جغرافیایی عکس را تغییر دهیم؟</h3><p>آموزش کامل ویرایش یا حذف مختصات GPS.</p></div>
+      </a>
+      <a href="ai-info-label-instagram.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/ai-info-label-cover.jpg" alt="برچسب AI info اینستاگرام" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چرا زیر پست اینستاگرام نوشته «AI info»؟</h3><p>ارتباط این برچسب با متادیتای عکس.</p></div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="28" height="28" />
+      <span>متانما</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="../photo.html">ابزار عکس</a></li>
+      <li><a href="../music.html">ابزار موزیک</a></li>
+      <li><a href="../pdf/index.html">ابزار PDF</a></li>
+      <li><a href="../convert/index.html">تبدیل عکس</a></li>
+      <li><a href="index.html">مقالات</a></li>
+    </ul>
+    <span class="footer-note">© <span data-year></span> متانما</span>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

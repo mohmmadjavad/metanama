@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم؟ آموزش کامل</title>
+<meta name="description" content="آموزش گام‌به‌گام تغییر یا حذف مختصات GPS ثبت‌شده در عکس، بدون نصب نرم‌افزار و بدون آپلود در سرور — مستقیم داخل مرورگر با ابزار رایگان متانما." />
+<meta name="keywords" content="تغییر موقعیت جغرافیایی عکس, تغییر gps عکس, حذف موقعیت مکانی عکس, ویرایش exif gps, تغییر لوکیشن عکس آنلاین" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080D1F" />
+<link rel="canonical" href="https://metanama.ir/blog/change-photo-gps-location.html" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="متانما" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:title" content="چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم؟" />
+<meta property="og:description" content="آموزش کامل تغییر یا حذف مختصات GPS عکس، آنلاین و بدون آپلود در سرور." />
+<meta property="og:image" content="https://metanama.ir/assets/img/blog/change-gps-cover.jpg" />
+<meta property="og:url" content="https://metanama.ir/blog/change-photo-gps-location.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم؟" />
+<meta name="twitter:description" content="آموزش کامل تغییر یا حذف مختصات GPS عکس، آنلاین و رایگان." />
+<meta name="twitter:image" content="https://metanama.ir/assets/img/blog/change-gps-cover.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32x32.png" />
+<link rel="shortcut icon" href="../assets/img/icons/favicon.ico" />
+<link rel="manifest" href="../site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم؟",
+  "description": "آموزش گام‌به‌گام تغییر یا حذف مختصات GPS عکس، آنلاین و بدون آپلود در سرور.",
+  "image": "https://metanama.ir/assets/img/blog/change-gps-cover.jpg",
+  "author": { "@type": "Person", "name": "محمد جواد محمودی", "url": "https://immdjavad.ir/" },
+  "publisher": { "@type": "Organization", "name": "متانما", "logo": { "@type": "ImageObject", "url": "https://metanama.ir/assets/img/logo.png" } },
+  "mainEntityOfPage": "https://metanama.ir/blog/change-photo-gps-location.html",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "fa-IR",
+  "wordCount": 1900,
+  "timeRequired": "PT9M"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://metanama.ir/" },
+    { "@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://metanama.ir/blog/index.html" },
+    { "@type": "ListItem", "position": 3, "name": "تغییر موقعیت جغرافیایی عکس", "item": "https://metanama.ir/blog/change-photo-gps-location.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم",
+  "step": [
+    { "@type": "HowToStep", "name": "آپلود عکس", "text": "عکس JPEG را در ابزار عکس متانما رها کنید." },
+    { "@type": "HowToStep", "name": "رفتن به تب ویرایش", "text": "به تب «ویرایش فیلدها» بروید و مقادیر فعلی GPS را ببینید." },
+    { "@type": "HowToStep", "name": "وارد کردن مختصات جدید", "text": "عرض و طول جغرافیایی جدید را به‌صورت اعشاری وارد کنید." },
+    { "@type": "HowToStep", "name": "دانلود فایل نهایی", "text": "روی «اعمال تغییرات و دانلود» بزنید تا فایل جدید ساخته شود." }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="36" height="36" />
+      <span>متانما</span>
+      <span class="dom">metanama.ir</span>
+    </a>
+    <nav class="nav-links" aria-label="ناوبری اصلی">
+      <a href="../index.html">خانه</a>
+      <a href="../photo.html">ابزار عکس</a>
+      <a href="../music.html">ابزار موزیک</a>
+      <a href="../pdf/index.html">ابزار PDF</a>
+      <a href="../convert/index.html">تبدیل عکس</a>
+      <a href="index.html" class="active">مقالات</a>
+      <a href="../index.html#developer">توسعه‌دهنده</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../photo.html" class="btn btn-primary btn-sm">شروع کنید</a>
+      <button class="nav-burger" aria-label="باز کردن منو" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-sheet">
+    <a href="../index.html">خانه</a>
+    <a href="../photo.html">ابزار عکس</a>
+    <a href="../music.html">ابزار موزیک</a>
+    <a href="../pdf/index.html">ابزار PDF</a>
+    <a href="../convert/index.html">تبدیل عکس</a>
+    <a href="index.html">مقالات</a>
+    <a href="../index.html#developer">توسعه‌دهنده</a>
+    <a href="../photo.html" class="btn btn-primary btn-block">شروع کنید</a>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="مسیر صفحه">
+    <a href="../index.html">خانه</a><span class="sep">/</span>
+    <a href="index.html">مقالات</a><span class="sep">/</span>
+    <span class="current">تغییر موقعیت GPS عکس</span>
+  </nav>
+
+  <div class="article-header">
+    <span class="cat-pill">متادیتای عکس</span>
+    <h1>چگونه موقعیت جغرافیایی (GPS) عکس را تغییر دهیم؟</h1>
+    <p class="lede" style="color:var(--text-2); font-size:16px; max-width:60ch;">هر عکسی که با موبایل با GPS روشن گرفته باشید، مختصات دقیق مکان ثبت را هم با خودش حمل می‌کند. این آموزش نشان می‌دهد چطور آن مختصات را به هر عددی که بخواهید تغییر دهید یا کامل حذف کنید.</p>
+    <div class="article-meta-row">
+      <span class="item">⏱ زمان مطالعه: ۹ دقیقه</span>
+      <span class="item">📅 بروزرسانی: شهریور ۱۴۰۵</span>
+      <span class="item">✍️ محمد جواد محمودی</span>
+    </div>
+  </div>
+
+  <div class="article-cover">
+    <img src="../assets/img/blog/change-gps-cover.jpg" alt="نقشه با یک پین موقعیت مکانی کنار یک عکس دیجیتال" width="1200" height="675" loading="eager" />
+  </div>
+
+  <div class="toc">
+    <strong>فهرست مطالب</strong>
+    <ol>
+      <li><a href="#why">چرا موقعیت مکانی عکس مهم است؟</a></li>
+      <li><a href="#where-stored">مختصات GPS کجای فایل ذخیره می‌شود؟</a></li>
+      <li><a href="#step-by-step">آموزش گام‌به‌گام تغییر GPS با متانما</a></li>
+      <li><a href="#only-remove">اگر فقط بخواهم موقعیت را پاک کنم، نه تغییرش دهم؟</a></li>
+      <li><a href="#find-coords">چطور مختصات دقیق یک مکان دیگر را پیدا کنم؟</a></li>
+      <li><a href="#mistakes">اشتباهات رایج در این کار</a></li>
+      <li><a href="#why-apps-fail">چرا برخی اپلیکیشن‌های موبایل درست کار نمی‌کنند؟</a></li>
+      <li><a href="#use-cases">چند سناریوی واقعی</a></li>
+      <li><a href="#precision">مختصات چقدر دقیق است؟</a></li>
+      <li><a href="#other-apps">تفاوت با تنظیمات موقعیت مکانی گوشی</a></li>
+      <li><a href="#metanama-vs-others">چرا ویرایش آنلاین بهتر از اپلیکیشن نصبی است؟</a></li>
+      <li><a href="#platforms">آیا روی موبایل هم همین‌طور کار می‌کند؟</a></li>
+      <li><a href="#multiple-photos-workflow">اگر چند عکس با موقعیت متفاوت دارم؟</a></li>
+      <li><a href="#privacy-mindset">یک تغییر ساده در عادت، نه فقط یک ابزار</a></li>
+      <li><a href="#faq">سوالات متداول</a></li>
+    </ol>
+  </div>
+
+  <article class="article-body">
+    <p>فرض کنید عکسی از داخل خانه‌تان برای فروش وسیله در دیوار گذاشته‌اید، یا می‌خواهید عکسی را بدون فاش‌کردن محل دقیق زندگی‌تان به اشتراک بگذارید. راه‌حل این نیست که از GPS گوشی صرف‌نظر کنید (چون دیگر برای عکس‌های جدید هم فعال نمی‌ماند)، بلکه کافی است مختصات موجود در همان عکس را ویرایش کنید. با <a href="../photo.html">ابزار رایگان عکس متانما</a> این کار چند ثانیه بیشتر طول نمی‌کشد و کاملاً داخل مرورگر شما انجام می‌شود.</p>
+
+    <h2 id="why">چرا موقعیت مکانی عکس مهم است؟</h2>
+    <p>مختصات GPS داخل عکس دقیق‌تر از چیزی است که فکرش را می‌کنید — معمولاً تا چند متر دقت دارد. یعنی اگر عکسی از حیاط خانه بگیرید و بدون ویرایش آن را جایی بگذارید، هرکسی که این فایل را دانلود کند و متادیتایش را ببیند، می‌تواند آدرس دقیق خانه‌ی شما را روی نقشه پیدا کند. این موضوع برای فروشندگان کالای دست‌دوم، عکاسان خانواده، یا هرکسی که عکس از محل زندگی یا کار خود منتشر می‌کند، اهمیت دارد.</p>
+
+    <h2 id="where-stored">مختصات GPS کجای فایل ذخیره می‌شود؟</h2>
+    <p>در فایل‌های JPEG، بخش GPS به‌صورت چند فیلد جداگانه داخل ساختار اگزیف ذخیره می‌شود: عرض جغرافیایی، طول جغرافیایی، و جهت هرکدام (شمالی/جنوبی و شرقی/غربی). این اعداد به‌صورت درجه-دقیقه-ثانیه ذخیره می‌شوند، نه به‌شکل اعشاری ساده‌ای که در نقشه‌ها می‌بینید — به همین دلیل ویرایش دستی آن‌ها با یک ویرایشگر متن معمولی عملاً غیرممکن است و به ابزار مخصوص نیاز دارد.</p>
+
+    <div class="tool-cta">
+      <div class="txt">
+        <strong>نیازی به تبدیل درجه-دقیقه-ثانیه نیست</strong>
+        <p>در ابزار عکس متانما فقط کافی است مختصات را به‌شکل اعشاری معمولی (مثل ۳۵.۷۰۰۶) وارد کنید؛ خود ابزار تبدیل و ذخیره‌سازی صحیح را انجام می‌دهد.</p>
+      </div>
+      <a href="../photo.html" class="btn btn-primary btn-sm">شروع ویرایش عکس</a>
+    </div>
+
+    <h2 id="step-by-step">آموزش گام‌به‌گام تغییر GPS با متانما</h2>
+    <ol>
+      <li>وارد <a href="../photo.html">ابزار عکس متانما</a> شوید و فایل JPEG خود را در کادر رها کنید.</li>
+      <li>در تب «خلاصه»، اگر عکس مختصات داشته باشد، هشدار قرمز موقعیت مکانی را می‌بینید — همراه با مختصات فعلی.</li>
+      <li>به تب «ویرایش فیلدها» بروید. فیلدهای «عرض جغرافیایی» و «طول جغرافیایی» از قبل با مقدار فعلی عکس (اگر داشته باشد) پر شده‌اند.</li>
+      <li>مقدار جدید را به‌صورت عدد اعشاری وارد کنید. مثلاً برای تهران چیزی نزدیک به <span class="mono">35.6892</span> برای عرض و <span class="mono">51.3890</span> برای طول جغرافیایی.</li>
+      <li>روی دکمه‌ی «اعمال تغییرات و دانلود» بزنید. فایل جدید با مختصات تغییریافته دانلود می‌شود.</li>
+    </ol>
+    <figure>
+      <img src="../assets/img/blog/change-gps-map-example.jpg" alt="نمونه‌ای از فرم ورود مختصات جغرافیایی جدید برای عکس" loading="lazy" width="1000" height="562" />
+      <figcaption>وارد کردن مختصات به‌صورت اعشاری ساده، بدون نیاز به فرمول تبدیل</figcaption>
+    </figure>
+
+    <h2 id="only-remove">اگر فقط بخواهم موقعیت را پاک کنم، نه تغییرش دهم؟</h2>
+    <p>اگر هدف فقط ناپدید‌کردن رد پای مکانی است و نیازی به وارد‌کردن مختصات جعلی نیست، به‌جای پر‌کردن فیلدهای عرض و طول جغرافیایی، در همان تب «ویرایش فیلدها» روی دکمه‌ی «فقط پاک‌کردن موقعیت مکانی» بزنید. این گزینه فقط بخش GPS را حذف می‌کند و بقیه‌ی اطلاعات مثل مدل دوربین یا تاریخ را دست‌نخورده نگه می‌دارد.</p>
+
+    <h2 id="find-coords">چطور مختصات دقیق یک مکان دیگر را پیدا کنم؟</h2>
+    <p>اگر می‌خواهید عکس را با موقعیت یک مکان عمومی (مثل یک پارک یا میدان شهر) نشان دهید، ساده‌ترین راه این است که آن مکان را در نقشه‌ی گوگل (Google Maps) جست‌وجو کنید، روی نقطه‌ی دقیق آن کلیک راست کنید و مختصات اعشاری نمایش‌داده‌شده را کپی کنید. همین دو عدد را در فیلدهای عرض و طول جغرافیایی ابزار متانما جای‌گذاری کنید.</p>
+
+    <h2 id="mistakes">اشتباهات رایج در این کار</h2>
+    <ul>
+      <li><strong>فراموش‌کردن علامت منفی:</strong> برای نیمکره‌ی جنوبی یا غربی، عدد باید منفی وارد شود.</li>
+      <li><strong>اسکرین‌شات‌گرفتن به‌جای ویرایش فایل اصلی:</strong> اسکرین‌شات یک فایل کاملاً جدید با متادیتای جدید می‌سازد و ممکن است مختصات دستگاه شما را (نه عکس اصلی) ثبت کند.</li>
+      <li><strong>فراموش‌کردن سایر فیلدهای هویتی:</strong> پاک‌کردن فقط GPS کافی نیست اگر نگران مدل دوربین یا نام‌تان در فیلد Artist هم هستید — برای آن‌ها به <a href="edit-photo-metadata-guide.html">راهنمای ویرایش کامل متادیتای عکس</a> سر بزنید.</li>
+    </ul>
+
+    <h2 id="why-apps-fail">چرا برخی اپلیکیشن‌های موبایل این کار را درست انجام نمی‌دهند؟</h2>
+    <p>خیلی از اپلیکیشن‌های رایگان «ویرایش اگزیف» که در فروشگاه‌های اپلیکیشن پیدا می‌کنید، در واقع فقط قابلیت حذف کامل مختصات را دارند، نه وارد‌کردن یک مختصات دلخواه. بعضی دیگر هم برای همین کار ساده نیاز به دسترسی‌های گسترده (مثل دسترسی کامل به گالری، اینترنت و حتی مخاطبین) درخواست می‌کنند که هیچ ربطی به ویرایش یک عدد ساده ندارد. چون متانما یک صفحه‌ی وب ساده است، نه اپلیکیشنی که باید نصب شود، هیچ‌کدام از این دسترسی‌ها را نمی‌خواهد — فقط همان فایلی که خودتان انتخاب می‌کنید را می‌بیند، آن‌هم فقط داخل حافظه‌ی موقت مرورگر شما.</p>
+
+    <h2 id="use-cases">چند سناریوی واقعی که تغییر GPS به‌کار می‌آید</h2>
+    <ul>
+      <li><strong>عکاسان مسافرتی:</strong> گاهی می‌خواهید عکسی که در یک نقطه‌ی خاص گرفته‌اید را با موقعیت یک نقطه‌ی عمومی و شناخته‌شده‌تر (مثل مرکز شهر) نشان دهید، بدون افشای مکان دقیق اقامتتان.</li>
+      <li><strong>وبلاگ‌نویسان و اینفلوئنسرها:</strong> برای عکس‌هایی که در آن‌ها به یک برند یا مکان تجاری اشاره می‌شود، گاهی لازم است موقعیت به شعبه‌ی مرکزی یا آدرس عمومی برند تغییر کند.</li>
+      <li><strong>آرشیو خانوادگی:</strong> وقتی می‌خواهید عکس‌های قدیمی خانوادگی را که موقعیت اشتباه یا ناقص ثبت شده، با مکان درست (که از حافظه یا آلبوم کاغذی می‌دانید) به‌روزرسانی کنید.</li>
+      <li><strong>فروشندگان آنلاین:</strong> جایگزین‌کردن موقعیت خانه با موقعیت یک منطقه‌ی کلی‌تر (مثلاً فقط نام شهر) پیش از انتشار آگهی — موضوعی که در <a href="post-photos-safely-divar-sheypoor.html">راهنمای عکس امن برای دیوار و شیپور</a> با جزئیات بیشتری پوشش داده‌ایم.</li>
+    </ul>
+
+    <h2 id="precision">مختصات چقدر دقیق است؟</h2>
+    <p>یک نکته‌ی فنی مهم: هر رقم اعشار در مختصات جغرافیایی، دقت را به‌طور قابل‌توجهی تغییر می‌دهد. برای مثال، تفاوت در رقم چهارم اعشار (مثل تغییر از ۳۵.۷۰۰۶ به ۳۵.۷۰۱۶) می‌تواند جابه‌جایی چند ده‌متری روی نقشه ایجاد کند، در حالی که تغییر در رقم دوم اعشار می‌تواند جابه‌جایی چند کیلومتری باشد. اگر فقط می‌خواهید موقعیت را «کلی‌تر» کنید (نه کاملاً تغییر دهید)، می‌توانید عمداً ارقام اعشاری آخر را حذف یا گرد کنید تا دقت مکانی کاهش یابد، بدون اینکه موقعیت کاملاً به جای دیگری منتقل شود.</p>
+
+    <h2 id="other-apps">تفاوت این روش با تنظیمات موقعیت مکانی گوشی</h2>
+    <p>خیلی از کاربران فکر می‌کنند اگر GPS گوشی را قبل از عکاسی خاموش کنند، مشکل حل می‌شود — و درست هم هست، اما فقط برای عکس‌های بعدی. غیرفعال‌کردن GPS تاثیری روی عکس‌هایی که از قبل گرفته شده‌اند ندارد؛ آن مختصات از قبل داخل فایل نوشته شده و تا زمانی که خودتان دستی آن را ویرایش یا حذف نکنید، همان‌جا باقی می‌ماند. به همین دلیل، تنظیمات حریم خصوصی گوشی و ابزار ویرایش متادیتا دو لایه‌ی مکمل هستند، نه جایگزین یکدیگر: یکی جلوی ثبت GPS در آینده را می‌گیرد، دیگری مختصات موجود در عکس‌های گذشته را کنترل می‌کند.</p>
+
+    <h2 id="metanama-vs-others">چرا ویرایش آنلاین بهتر از اپلیکیشن‌های نصبی است؟</h2>
+    <p>برای یک کار به‌این‌سادگی — تغییر دو عدد در یک فایل — نصب یک اپلیکیشن کامل روی گوشی یا کامپیوتر معمولاً غیرضروری است. اپلیکیشن‌های نصبی معمولاً فضای ذخیره‌سازی اشغال می‌کنند، نیاز به آپدیت دارند و گاهی برای کارکردن نیاز به دسترسی‌های اضافه (مثل اینترنت یا گالری کامل) می‌خواهند. یک ابزار وب مثل متانما این مشکلات را ندارد: هیچ نصبی لازم نیست، همیشه آخرین نسخه در دسترس است، و چون کاملاً در مرورگر اجرا می‌شود، هیچ دسترسی اضافه‌ای به فایل‌های دیگر دستگاهتان نمی‌خواهد.</p>
+
+    <h2 id="platforms">آیا روی موبایل هم همین‌طور کار می‌کند؟</h2>
+    <p>بله. چون متانما یک صفحه‌ی وب معمولی است (نه یک اپلیکیشن نصبی)، دقیقاً به همان شکل روی مرورگر گوشی اندروید، آیفون، تبلت یا کامپیوتر کار می‌کند. تنها کاری که لازم است، باز‌کردن سایت در مرورگر (کروم، سافاری یا هر مرورگر دیگری) و انتخاب فایل از گالری یا حافظه‌ی دستگاه است. چون هیچ داده‌ای به سرور ارسال نمی‌شود، سرعت پردازش هم به سرعت اینترنت شما بستگی ندارد — فقط قدرت پردازش خود دستگاه مهم است، که برای این نوع پردازش سبک، حتی گوشی‌های قدیمی‌تر هم به‌راحتی از پس آن برمی‌آیند.</p>
+
+    <h2 id="multiple-photos-workflow">اگر چند عکس با موقعیت مکانی متفاوت دارم چه کار کنم؟</h2>
+    <p>گاهی یک مجموعه عکس از چند مکان مختلف دارید و می‌خواهید همه را به یک موقعیت واحد (مثلاً مرکز شهر) تغییر دهید. در این حالت، ساده‌ترین روش این است که مختصات مقصد را یک‌بار جایی یادداشت کنید (کپی کنید) و برای هر عکس، همان دو عدد را در فیلدهای عرض و طول جغرافیایی جای‌گذاری کنید. چون فرایند برای هر عکس فقط چند ثانیه طول می‌کشد، حتی برای ده‌ها عکس هم کار زمان‌بری نخواهد بود.</p>
+
+    <h2 id="privacy-mindset">یک تغییر ساده در عادت، نه فقط یک ابزار</h2>
+    <p>فراتر از خود ابزار، نکته‌ی مهم‌تر ساختن یک عادت است: قبل از اشتراک‌گذاری هر عکسی که از داخل خانه، محل کار یا هر مکان خصوصی دیگر گرفته‌اید، یک لحظه مکث کنید و از خودتان بپرسید «آیا این عکس موقعیت مکانی هم با خودش دارد؟». این یک سوال ساده و چند‌ثانیه‌ای است، اما می‌تواند از افشای ناخواسته‌ی اطلاعات حساس در درازمدت جلوگیری کند. با گذشت زمان و استفاده‌ی مکرر از <a href="../photo.html">ابزار متانما</a>، این بررسی به یک بخش طبیعی از روال اشتراک‌گذاری عکس شما تبدیل می‌شود، دقیقاً مثل چک‌کردن املای یک پیام قبل از ارسال، یا قفل‌کردن در خانه پیش از خروج — کارهای کوچکی که به‌مرور، بدون فکرکردن آگاهانه، بخشی از عادت روزمره می‌شوند.</p>
+
+    <h2 id="faq">سوالات متداول</h2>
+    <h3>آیا تغییر GPS باعث افت کیفیت عکس می‌شود؟</h3>
+    <p>خیر. مختصات GPS کاملاً جدا از پیکسل‌های تصویر ذخیره می‌شود و تغییرش هیچ تاثیری روی کیفیت بصری ندارد.</p>
+    <h3>آیا این کار روی PNG هم جواب می‌دهد؟</h3>
+    <p>ویرایش دستی مختصات فقط روی JPEG پشتیبانی می‌شود. برای PNG می‌توانید از گزینه‌ی «حذف کامل متادیتا» استفاده کنید تا هر داده‌ی مکانی احتمالی هم پاک شود.</p>
+    <h3>آیا می‌توانم بعداً مختصات را دوباره به حالت اول برگردانم؟</h3>
+    <p>اگر فایل اصلی را جایی نگه داشته باشید، بله — چون هر ویرایش روی یک نسخه‌ی جدید انجام می‌شود و فایل اصلی شما دست‌نخورده باقی می‌ماند.</p>
+
+    <h2>جمع‌بندی</h2>
+    <p>تغییر یا حذف موقعیت جغرافیایی عکس نیازی به نرم‌افزار تخصصی یا دانش فنی ندارد. با <a href="../photo.html">ابزار عکس متانما</a> این کار در چند کلیک و کاملاً رایگان انجام می‌شود — بدون آپلود فایل در هیچ سروری.</p>
+  </article>
+
+  <div class="tag-row">
+    <span class="tag">gps</span><span class="tag">exif</span><span class="tag">location-privacy</span>
+  </div>
+
+  <div class="author-box">
+    <img src="../assets/img/dev/mmahmoudi.jpg" alt="محمد جواد محمودی" width="56" height="56" loading="lazy" />
+    <div>
+      <strong>محمد جواد محمودی</strong>
+      <span>توسعه‌دهنده و نویسنده‌ی متانما — <a href="https://immdjavad.ir/" target="_blank" rel="noopener">immdjavad.ir</a></span>
+    </div>
+  </div>
+
+  <section class="related-posts">
+    <h2>مقالات مرتبط</h2>
+    <div class="post-grid">
+      <a href="delete-photo-metadata-completely.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/delete-metadata-cover.jpg" alt="حذف کامل متادیتای عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟</h3><p>روش سریع پاک‌سازی کامل قبل از اشتراک‌گذاری.</p></div>
+      </a>
+      <a href="edit-photo-metadata-guide.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/edit-metadata-cover.jpg" alt="ویرایش متادیتای عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟</h3><p>ویرایش دستی مدل دوربین، تاریخ، هنرمند و بیشتر.</p></div>
+      </a>
+      <a href="post-photos-safely-divar-sheypoor.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/divar-safety-cover.jpg" alt="پست امن عکس در دیوار و شیپور" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه قبل از فروش در دیوار و شیپور، عکس امن پست کنیم؟</h3><p>نکات حریم خصوصی پیش از انتشار عکس کالا.</p></div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="28" height="28" />
+      <span>متانما</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="../photo.html">ابزار عکس</a></li>
+      <li><a href="../music.html">ابزار موزیک</a></li>
+      <li><a href="../pdf/index.html">ابزار PDF</a></li>
+      <li><a href="../convert/index.html">تبدیل عکس</a></li>
+      <li><a href="index.html">مقالات</a></li>
+    </ul>
+    <span class="footer-note">© <span data-year></span> متانما</span>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟ راهنمای کامل</title>
+<meta name="description" content="آموزش تغییر مدل دوربین، تاریخ ضبط، نام هنرمند و سایر فیلدهای اگزیف عکس، بدون نرم‌افزار و بدون آپلود در سرور — با ابزار رایگان متانما." />
+<meta name="keywords" content="ویرایش اطلاعات عکس, تغییر اطلاعات exif عکس, ویرایش تاریخ عکس, تغییر مدل دوربین عکس, ویرایش متادیتای jpeg" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#080D1F" />
+<link rel="canonical" href="https://metanama.ir/blog/edit-photo-metadata-guide.html" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="متانما" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:title" content="چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟" />
+<meta property="og:description" content="آموزش تغییر مدل دوربین، تاریخ و سایر فیلدهای اگزیف عکس، آنلاین و بدون آپلود در سرور." />
+<meta property="og:image" content="https://metanama.ir/assets/img/blog/edit-metadata-cover.jpg" />
+<meta property="og:url" content="https://metanama.ir/blog/edit-photo-metadata-guide.html" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟" />
+<meta name="twitter:description" content="راهنمای کامل ویرایش فیلدهای اگزیف عکس، آنلاین و رایگان." />
+<meta name="twitter:image" content="https://metanama.ir/assets/img/blog/edit-metadata-cover.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/favicon-32x32.png" />
+<link rel="shortcut icon" href="../assets/img/icons/favicon.ico" />
+<link rel="manifest" href="../site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟",
+  "description": "آموزش تغییر مدل دوربین، تاریخ و سایر فیلدهای اگزیف عکس، آنلاین و بدون آپلود در سرور.",
+  "image": "https://metanama.ir/assets/img/blog/edit-metadata-cover.jpg",
+  "author": { "@type": "Person", "name": "محمد جواد محمودی", "url": "https://immdjavad.ir/" },
+  "publisher": { "@type": "Organization", "name": "متانما", "logo": { "@type": "ImageObject", "url": "https://metanama.ir/assets/img/logo.png" } },
+  "mainEntityOfPage": "https://metanama.ir/blog/edit-photo-metadata-guide.html",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "fa-IR",
+  "wordCount": 1900,
+  "timeRequired": "PT9M"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://metanama.ir/" },
+    { "@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://metanama.ir/blog/index.html" },
+    { "@type": "ListItem", "position": 3, "name": "ویرایش متادیتای عکس", "item": "https://metanama.ir/blog/edit-photo-metadata-guide.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="36" height="36" />
+      <span>متانما</span>
+      <span class="dom">metanama.ir</span>
+    </a>
+    <nav class="nav-links" aria-label="ناوبری اصلی">
+      <a href="../index.html">خانه</a>
+      <a href="../photo.html">ابزار عکس</a>
+      <a href="../music.html">ابزار موزیک</a>
+      <a href="../pdf/index.html">ابزار PDF</a>
+      <a href="../convert/index.html">تبدیل عکس</a>
+      <a href="index.html" class="active">مقالات</a>
+      <a href="../index.html#developer">توسعه‌دهنده</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../photo.html" class="btn btn-primary btn-sm">شروع کنید</a>
+      <button class="nav-burger" aria-label="باز کردن منو" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-sheet">
+    <a href="../index.html">خانه</a>
+    <a href="../photo.html">ابزار عکس</a>
+    <a href="../music.html">ابزار موزیک</a>
+    <a href="../pdf/index.html">ابزار PDF</a>
+    <a href="../convert/index.html">تبدیل عکس</a>
+    <a href="index.html">مقالات</a>
+    <a href="../index.html#developer">توسعه‌دهنده</a>
+    <a href="../photo.html" class="btn btn-primary btn-block">شروع کنید</a>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="مسیر صفحه">
+    <a href="../index.html">خانه</a><span class="sep">/</span>
+    <a href="index.html">مقالات</a><span class="sep">/</span>
+    <span class="current">ویرایش متادیتای عکس</span>
+  </nav>
+
+  <div class="article-header">
+    <span class="cat-pill">متادیتای عکس</span>
+    <h1>چگونه اطلاعات (متادیتای) عکس را ویرایش کنیم؟</h1>
+    <p class="lede" style="color:var(--text-2); font-size:16px; max-width:60ch;">گاهی نمی‌خواهید متادیتا را پاک کنید، می‌خواهید درستش کنید: تاریخ اشتباه را تصحیح کنید، نام خودتان را به‌عنوان عکاس ثبت کنید یا مدل دوربین را تغییر دهید. این راهنما دقیقاً همین را نشان می‌دهد.</p>
+    <div class="article-meta-row">
+      <span class="item">⏱ زمان مطالعه: ۹ دقیقه</span>
+      <span class="item">📅 بروزرسانی: شهریور ۱۴۰۵</span>
+      <span class="item">✍️ محمد جواد محمودی</span>
+    </div>
+  </div>
+
+  <div class="article-cover">
+    <img src="../assets/img/blog/edit-metadata-cover.jpg" alt="فرم ویرایش فیلدهای اطلاعات عکس روی صفحه‌ی نمایش" width="1200" height="675" loading="eager" />
+  </div>
+
+  <div class="toc">
+    <strong>فهرست مطالب</strong>
+    <ol>
+      <li><a href="#why-edit">چرا کسی می‌خواهد متادیتا را ویرایش کند، نه پاک؟</a></li>
+      <li><a href="#fields">فیلدهایی که می‌توان ویرایش کرد</a></li>
+      <li><a href="#step-by-step">آموزش گام‌به‌گام ویرایش</a></li>
+      <li><a href="#date-format">فرمت درست وارد‌کردن تاریخ</a></li>
+      <li><a href="#jpeg-only">چرا فقط JPEG قابل ویرایش دستی است؟</a></li>
+      <li><a href="#combine">ترکیب ویرایش با حذف موقعیت مکانی</a></li>
+      <li><a href="#use-cases">چند کاربرد واقعی ویرایش متادیتا</a></li>
+      <li><a href="#artist-vs-copyright">تفاوت فیلد Artist و Copyright</a></li>
+      <li><a href="#tips">چند نکته‌ی عملی برای ویرایش دقیق‌تر</a></li>
+      <li><a href="#software-field">فیلد Software دقیقاً چه چیزی را نشان می‌دهد؟</a></li>
+      <li><a href="#undo">اگر بعد از ویرایش پشیمان شدم، چطور برگردم؟</a></li>
+      <li><a href="#batch-editing">ویرایش هماهنگ چند عکس از یک مجموعه</a></li>
+      <li><a href="#common-questions-workflow">یک سناریوی کامل: از عکس خام تا فایل نهایی</a></li>
+      <li><a href="#when-not-to-edit">چه زمانی بهتر است ویرایش نکنید؟</a></li>
+      <li><a href="#team-workflow">استفاده در تیم‌های محتوا و رسانه</a></li>
+      <li><a href="#faq">سوالات متداول</a></li>
+    </ol>
+  </div>
+
+  <article class="article-body">
+    <p>ویرایش متادیتا با حذف کامل آن فرق دارد. گاهی یک عکاس می‌خواهد نامش به‌عنوان صاحب اثر در فایل ثبت شود، یا یک فروشنده می‌خواهد فقط موقعیت مکانی پاک شود ولی بقیه‌ی اطلاعات فنی دست‌نخورده بماند. برای همین سناریوها، به‌جای حذف کامل، از تب «ویرایش فیلدها»ی <a href="../photo.html">ابزار عکس متانما</a> استفاده می‌کنیم.</p>
+
+    <h2 id="why-edit">چرا کسی می‌خواهد متادیتا را ویرایش کند، نه پاک؟</h2>
+    <p>چند سناریوی رایج وجود دارد:</p>
+    <ul>
+      <li><strong>تصحیح تاریخ اشتباه:</strong> وقتی ساعت دوربین یا گوشی درست تنظیم نبوده و تاریخ ثبت‌شده در عکس‌های قدیمی اشتباه است.</li>
+      <li><strong>ثبت حق مالکیت:</strong> عکاسان حرفه‌ای معمولاً نام و اطلاعات کپی‌رایت خود را در فیلدهای Artist و Copyright ثبت می‌کنند.</li>
+      <li><strong>افزودن توضیح:</strong> برای آرشیو شخصی، می‌توانید توضیح کوتاهی درباره‌ی محتوای عکس در فیلد Description بنویسید.</li>
+      <li><strong>پاک‌کردن هدفمند فقط یک فیلد:</strong> مثلاً فقط موقعیت مکانی، بدون دست‌زدن به بقیه.</li>
+    </ul>
+
+    <h2 id="fields">فیلدهایی که می‌توان ویرایش کرد</h2>
+    <p>ابزار عکس متانما این فیلدهای پرکاربرد را برای ویرایش مستقیم در اختیارتان می‌گذارد:</p>
+    <ul>
+      <li><strong>سازنده‌ی دوربین (Make) و مدل دوربین (Model):</strong> مثلاً Apple یا iPhone 14 Pro.</li>
+      <li><strong>تاریخ و زمان ضبط:</strong> به فرمت سال:ماه:روز ساعت:دقیقه:ثانیه.</li>
+      <li><strong>نرم‌افزار (Software):</strong> نام برنامه‌ای که آخرین بار عکس را ویرایش کرده.</li>
+      <li><strong>هنرمند/عکاس (Artist) و کپی‌رایت:</strong> برای ثبت مالکیت اثر.</li>
+      <li><strong>توضیحات تصویر:</strong> یک متن آزاد درباره‌ی محتوای عکس.</li>
+      <li><strong>موقعیت جغرافیایی (GPS):</strong> که در <a href="change-photo-gps-location.html">مقاله‌ی مخصوص تغییر GPS</a> با جزئیات بیشتر توضیح داده‌ایم.</li>
+    </ul>
+
+    <div class="tool-cta">
+      <div class="txt">
+        <strong>همه‌ی فیلدها از قبل پر شده‌اند</strong>
+        <p>وقتی عکس را بارگذاری می‌کنید، فرم ویرایش خودکار با مقادیر فعلی فایل پر می‌شود — فقط چیزی را که می‌خواهید عوض کنید، تغییر دهید.</p>
+      </div>
+      <a href="../photo.html" class="btn btn-primary btn-sm">شروع ویرایش</a>
+    </div>
+
+    <h2 id="step-by-step">آموزش گام‌به‌گام ویرایش</h2>
+    <ol>
+      <li>عکس JPEG را در <a href="../photo.html">ابزار عکس متانما</a> بارگذاری کنید.</li>
+      <li>به تب «ویرایش فیلدها» بروید؛ مقادیر فعلی هر فیلد (در صورت وجود) از قبل نمایش داده می‌شود.</li>
+      <li>فیلد یا فیلدهای مورد نظر را تغییر دهید. برای پاک‌کردن یک فیلد خاص، کافی است آن را خالی بگذارید.</li>
+      <li>روی «اعمال تغییرات و دانلود» بزنید.</li>
+      <li>فایل جدید با اطلاعات به‌روزشده دانلود می‌شود؛ فایل اصلی شما دست‌نخورده باقی می‌ماند.</li>
+    </ol>
+    <figure>
+      <img src="../assets/img/blog/edit-metadata-fields.jpg" alt="نمایش فرم فیلدهای قابل‌ویرایش شامل دوربین، تاریخ و هنرمند" loading="lazy" width="1000" height="562" />
+      <figcaption>فیلدهای قابل ویرایش: دوربین، تاریخ، نرم‌افزار، هنرمند، کپی‌رایت، توضیحات و GPS</figcaption>
+    </figure>
+
+    <h2 id="date-format">فرمت درست وارد‌کردن تاریخ</h2>
+    <p>استاندارد اگزیف تاریخ را به شکل خاصی ذخیره می‌کند: <span class="mono">YYYY:MM:DD HH:MM:SS</span> — یعنی سال، ماه و روز با دو‌نقطه از هم جدا می‌شوند، نه با خط تیره. مثلاً برای دوم مرداد ۱۴۰۴ (به‌وقت میلادی ۲۴ ژوئیه ۲۰۲۵) باید بنویسید: <span class="mono">2025:07:24 14:30:00</span>. اگر فرمت را رعایت نکنید، برخی نرم‌افزارها ممکن است تاریخ را درست نمایش ندهند.</p>
+
+    <h2 id="jpeg-only">چرا فقط JPEG قابل ویرایش دستی است؟</h2>
+    <p>استاندارد اگزیف که این فیلدها را تعریف می‌کند، در اصل برای فرمت JPEG طراحی شده و ساختار مشخصی برای نوشتن و بازنویسی این فیلدها دارد. فرمت‌های PNG و WEBP از سیستم متادیتای متفاوتی استفاده می‌کنند که ویرایش فیلد‌به‌فیلدشان پیچیده‌تر است. اگر عکس شما PNG یا WEBP است و می‌خواهید اطلاعاتش پاک شود (نه ویرایش شود)، از دکمه‌ی «دانلود نسخه‌ی پاک‌شده» استفاده کنید که برای هر فرمتی کار می‌کند — جزئیاتش در <a href="delete-photo-metadata-completely.html">مقاله‌ی حذف کامل متادیتا</a> آمده.</p>
+
+    <h2 id="combine">ترکیب ویرایش با حذف موقعیت مکانی</h2>
+    <p>یک ترفند مفید: می‌توانید همزمان مدل دوربین یا تاریخ را ویرایش کنید و در همان فرم، فیلدهای عرض و طول جغرافیایی را خالی بگذارید تا مقدار قبلی GPS هم حذف شود (به‌شرطی که واقعاً بخواهید GPS تغییر کند، نه اینکه دست‌نخورده بماند). اگر فقط می‌خواهید GPS برود و بقیه دست‌نخورده بماند، دکمه‌ی جداگانه‌ی «فقط پاک‌کردن موقعیت مکانی» دقیق‌تر عمل می‌کند، چون تضمین می‌کند هیچ فیلد دیگری تغییر نمی‌کند.</p>
+
+    <h2 id="use-cases">چند کاربرد واقعی ویرایش متادیتا</h2>
+    <ul>
+      <li><strong>عکاسان فریلنسر:</strong> پیش از تحویل عکس به مشتری، ثبت نام و اطلاعات کپی‌رایت در فیلدهای Artist و Copyright، مدرکی ساده برای اثبات مالکیت اثر است.</li>
+      <li><strong>سازمان‌دهی آرشیو خانوادگی:</strong> وقتی چند عکس اسکن‌شده از آلبوم‌های قدیمی دارید که تاریخ درستی ندارند، ثبت تاریخ تقریبی واقعی کمک می‌کند گالری موبایل یا سرویس‌های ابری، آن‌ها را به‌ترتیب درست نمایش دهند.</li>
+      <li><strong>تیم‌های محتوا:</strong> افزودن یک توضیح کوتاه در فیلد Description می‌تواند برای جست‌وجوی داخلی در آرشیوهای بزرگ عکس مفید باشد.</li>
+      <li><strong>حل تعارض نرم‌افزار ویرایش:</strong> بعضی وقت‌ها فیلد Software نام یک برنامه‌ی نامرتبط یا قدیمی را نشان می‌دهد؛ می‌توانید آن را با نام درست جایگزین کنید یا کامل پاک کنید.</li>
+    </ul>
+
+    <h2 id="artist-vs-copyright">تفاوت فیلد Artist و Copyright</h2>
+    <p>این دو فیلد شبیه هم به‌نظر می‌رسند اما کاربرد متفاوتی دارند. فیلد Artist معمولاً نام شخصی است که عکس را گرفته (مثلاً «علی رضایی»)، در حالی که فیلد Copyright بیشتر برای عبارت حقوقی مالکیت استفاده می‌شود (مثلاً «© 2026 علی رضایی، تمامی حقوق محفوظ است»). می‌توانید هر دو را همزمان پر کنید، یا فقط یکی را بسته به نیازتان.</p>
+
+    <h2 id="tips">چند نکته‌ی عملی برای ویرایش دقیق‌تر</h2>
+    <ul>
+      <li>پیش از ویرایش، همیشه یک نگاه به تب «خلاصه» بیندازید تا بدانید فعلاً چه مقادیری در فایل وجود دارد.</li>
+      <li>اگر می‌خواهید چند عکس از یک مجموعه (مثلاً یک ژست عکاسی) اطلاعات یکسانی داشته باشند، مقادیر Artist و Copyright را از یک منبع (مثل یک فایل متنی) کپی کنید تا در همه‌جا دقیقاً یکسان باشند.</li>
+      <li>بعد از هر ویرایش، فایل خروجی را دوباره بارگذاری کنید تا مطمئن شوید مقادیر درست ذخیره شده‌اند.</li>
+    </ul>
+
+    <h2 id="software-field">فیلد Software دقیقاً چه چیزی را نشان می‌دهد؟</h2>
+    <p>فیلد Software معمولاً نام و نسخه‌ی آخرین برنامه‌ای است که فایل را ذخیره یا ویرایش کرده — مثلاً «Adobe Photoshop 2026» یا نام یک اپلیکیشن ویرایش موبایل. این فیلد به‌طور خودکار توسط نرم‌افزار نوشته می‌شود و معمولاً کاربر کنترلی روی محتوای دقیق آن ندارد، مگر این‌که مستقیم آن را ویرایش کند. برخی کاربران ترجیح می‌دهند این فیلد را قبل از اشتراک‌گذاری عکس، به یک متن خنثی (یا خالی) تغییر دهند تا افشا نشود از چه ابزاری برای ویرایش نهایی استفاده کرده‌اند — به‌خصوص وقتی هدف حفظ حس «دست‌نخورده‌بودن» عکس است.</p>
+
+    <h2 id="undo">اگر بعد از ویرایش پشیمان شدم، چطور برگردم؟</h2>
+    <p>خبر خوب این است که متانما هیچ‌وقت فایل اصلی شما را تغییر نمی‌دهد — هر ویرایش، یک فایل خروجی کاملاً جدید می‌سازد (معمولاً با پسوند «-edited» در نام فایل). یعنی تا زمانی که فایل اولیه را حذف نکرده باشید، همیشه می‌توانید از صفر شروع کنید: فایل اصلی را دوباره در ابزار بارگذاری کنید و این‌بار مقادیر متفاوتی وارد کنید. به همین دلیل، توصیه می‌شود همیشه یک نسخه از فایل اصلی (پیش از هر ویرایش) را جایی نگه دارید.</p>
+
+    <h2 id="batch-editing">ویرایش هماهنگ چند عکس از یک مجموعه</h2>
+    <p>اگر یک مجموعه عکس دارید که همه باید اطلاعات یکسانی داشته باشند (مثلاً یک ژست عکاسی حرفه‌ای که قرار است همه با نام یک عکاس منتشر شوند)، بهترین روش این است که مقادیر Artist، Copyright و حتی Description را از قبل در یک فایل متنی ساده بنویسید، سپس هنگام ویرایش هر عکس، همان متن‌ها را کپی و در فیلد مربوطه جای‌گذاری کنید. این کار تضمین می‌کند همه‌ی عکس‌های مجموعه، دقیقاً یک نگارش یکسان (بدون تفاوت‌های جزئی تایپی) داشته باشند.</p>
+
+    <h2 id="common-questions-workflow">یک سناریوی کامل: از عکس خام تا فایل نهایی</h2>
+    <p>برای روشن‌تر شدن کاربرد این ابزار، یک مثال کامل را مرور می‌کنیم. فرض کنید یک عکاس هستید که تازه از یک جلسه‌ی عکاسی برگشته‌اید:</p>
+    <ol>
+      <li>عکس خام را در <a href="../photo.html">ابزار عکس متانما</a> بارگذاری می‌کنید.</li>
+      <li>در تب «خلاصه»، می‌بینید تاریخ و مدل دوربین درست ثبت شده، اما موقعیت مکانی هم فعال بوده.</li>
+      <li>به تب «ویرایش فیلدها» می‌روید، نام و کپی‌رایت خودتان را در فیلدهای مربوطه وارد می‌کنید.</li>
+      <li>فیلدهای عرض و طول جغرافیایی را خالی می‌گذارید یا از دکمه‌ی «فقط پاک‌کردن موقعیت مکانی» استفاده می‌کنید.</li>
+      <li>روی «اعمال تغییرات و دانلود» کلیک می‌کنید و فایل نهایی، آماده برای تحویل به مشتری یا انتشار، دانلود می‌شود.</li>
+    </ol>
+    <p>این کل فرآیند، از ابتدا تا انتها، معمولاً کمتر از یک دقیقه طول می‌کشد.</p>
+
+    <h2 id="when-not-to-edit">چه زمانی بهتر است ویرایش نکنید؟</h2>
+    <p>گاهی بهترین تصمیم، دست‌نزدن به متادیتا است. اگر عکس‌ها را برای آرشیو شخصی یا خانوادگی نگه می‌دارید (نه برای اشتراک‌گذاری عمومی)، تاریخ و مکان دقیق می‌تواند بعدها ارزش خاطره‌ای پیدا کند. در چنین مواردی، توصیه می‌شود فقط زمانی سراغ ویرایش یا حذف بروید که واقعاً قصد اشتراک‌گذاری یا انتشار عمومی عکس را دارید — نه به‌طور پیش‌فرض برای همه‌ی عکس‌های شخصی‌تان.</p>
+
+    <h2 id="team-workflow">استفاده در تیم‌های محتوا و رسانه</h2>
+    <p>برای تیم‌های تولید محتوا که چند نفر روی یک آرشیو مشترک عکس کار می‌کنند، ثبت یکسان و استاندارد فیلدهای Copyright و Artist می‌تواند به شفافیت مالکیت هر عکس کمک کند — به‌خصوص وقتی عکس‌ها از منابع مختلف (عکاسان مختلف، خرید از بانک عکس) جمع‌آوری شده‌اند. یک قرارداد ساده در تیم (مثلاً «همیشه نام عکاس در فیلد Artist و نام شرکت در Copyright») می‌تواند بعدها در تشخیص منبع هر تصویر بسیار کمک‌کننده باشد.</p>
+
+    <h2 id="faq">سوالات متداول</h2>
+    <h3>اگر فیلدی را خالی بگذارم چه اتفاقی می‌افتد؟</h3>
+    <p>آن فیلد کامل از فایل خروجی حذف می‌شود، نه اینکه خالی ذخیره شود.</p>
+    <h3>آیا ویرایش متادیتا کیفیت تصویر را کم می‌کند؟</h3>
+    <p>خیر، چون این فیلدها کاملاً جدا از پیکسل‌های تصویر هستند.</p>
+    <h3>می‌توانم چند بار پشت‌سرهم ویرایش کنم؟</h3>
+    <p>بله، هر بار که فایل خروجی را دوباره بارگذاری کنید، می‌توانید فیلدهای دیگری را هم تغییر دهید.</p>
+    <h3>آیا این ابزار روی مرورگر موبایل هم کار می‌کند؟</h3>
+    <p>بله، چون یک صفحه‌ی وب معمولی است، در مرورگر گوشی هم دقیقاً به همان شکل کار می‌کند — بدون نیاز به نصب چیزی.</p>
+    <h3>آیا فایل اصلی من در طول ویرایش تغییر می‌کند؟</h3>
+    <p>خیر، متانما همیشه یک فایل خروجی جدید می‌سازد و فایل اصلی روی دستگاه شما دست‌نخورده باقی می‌ماند. این یعنی همیشه می‌توانید به نقطه‌ی شروع برگردید و دوباره از صفر ویرایش کنید.</p>
+
+    <h2>جمع‌بندی</h2>
+    <p>ویرایش متادیتای عکس — چه برای تصحیح تاریخ، چه برای ثبت نام خودتان به‌عنوان عکاس — با <a href="../photo.html">ابزار عکس متانما</a> نیازی به هیچ نرم‌افزار یا دانش فنی خاصی ندارد و کاملاً رایگان و آنلاین انجام می‌شود.</p>
+  </article>
+
+  <div class="tag-row">
+    <span class="tag">exif</span><span class="tag">edit-metadata</span><span class="tag">jpeg</span>
+  </div>
+
+  <div class="author-box">
+    <img src="../assets/img/dev/mmahmoudi.jpg" alt="محمد جواد محمودی" width="56" height="56" loading="lazy" />
+    <div>
+      <strong>محمد جواد محمودی</strong>
+      <span>توسعه‌دهنده و نویسنده‌ی متانما — <a href="https://immdjavad.ir/" target="_blank" rel="noopener">immdjavad.ir</a></span>
+    </div>
+  </div>
+
+  <section class="related-posts">
+    <h2>مقالات مرتبط</h2>
+    <div class="post-grid">
+      <a href="change-photo-gps-location.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/change-gps-cover.jpg" alt="تغییر موقعیت جغرافیایی عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه موقعیت جغرافیایی عکس را تغییر دهیم؟</h3><p>آموزش کامل ویرایش یا حذف مختصات GPS.</p></div>
+      </a>
+      <a href="delete-photo-metadata-completely.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/delete-metadata-cover.jpg" alt="حذف کامل متادیتای عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>چگونه تمام اطلاعات و متادیتای عکس را حذف کنیم؟</h3><p>روش سریع پاک‌سازی کامل قبل از اشتراک‌گذاری.</p></div>
+      </a>
+      <a href="what-is-exif-guide.html" class="post-card">
+        <div class="thumb"><img src="../assets/img/blog/exif-guide-cover.jpg" alt="راهنمای کامل اگزیف عکس" loading="lazy" /><span class="cat">عکس</span></div>
+        <div class="body"><h3>اگزیف (EXIF) چیست؟ راهنمای کامل متادیتای عکس</h3><p>همه‌ی فیلدهای اگزیف و کاربردشان را یک‌جا بشناسید.</p></div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="لوگوی متانما" width="28" height="28" />
+      <span>متانما</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="../photo.html">ابزار عکس</a></li>
+      <li><a href="../music.html">ابزار موزیک</a></li>
+      <li><a href="../pdf/index.html">ابزار PDF</a></li>
+      <li><a href="../convert/index.html">تبدیل عکس</a></li>
+      <li><a href="index.html">مقالات</a></li>
+    </ul>
+    <span class="footer-note">© <span data-year></span> متانما</span>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
